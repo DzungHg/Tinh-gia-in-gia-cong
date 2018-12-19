@@ -63,17 +63,42 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="RadForm1.cs">
+    <Compile Include="CustomControls\BaseGridControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomControls\BaseGridControl.designer.cs">
+      <DependentUpon>BaseGridControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControls\TopControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomControls\TopControl.designer.cs">
+      <DependentUpon>TopControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\BangGiaInGiaCong.cs" />
+    <Compile Include="Models\LoaiThanhPhamContext.cs" />
+    <Compile Include="Models\NiemYetGIGCThanhPhamContext.cs" />
+    <Compile Include="Models\BangGiaInGiaCongContext.cs" />
+    <Compile Include="Models\LoaiThanhPham.cs" />
+    <Compile Include="Models\NiemYetGIGCThanhPham.cs" />
+    <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RadForm1.Designer.cs">
-      <DependentUpon>RadForm1.cs</DependentUpon>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="RadForm1.resx">
-      <DependentUpon>RadForm1.cs</DependentUpon>
+    <EmbeddedResource Include="CustomControls\BaseGridControl.resx">
+      <DependentUpon>BaseGridControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomControls\TopControl.resx">
+      <DependentUpon>TopControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -99,8 +124,6 @@
   </ItemGroup>
   <ItemGroup>
     <!--sirinie -->
-    <Folder Include="CustomUserControls\" />
-    <Folder Include="Models\" />
     <Folder Include="Presenters\" />
     <Folder Include="Views\" />
   </ItemGroup>

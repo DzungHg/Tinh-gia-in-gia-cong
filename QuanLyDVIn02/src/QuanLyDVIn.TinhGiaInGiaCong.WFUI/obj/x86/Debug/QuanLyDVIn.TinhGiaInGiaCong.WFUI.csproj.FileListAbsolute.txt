@@ -1,0 +1,8 @@
+D:\GitHub02\Tinh-gia-in-gia-cong\QuanLyDVIn02\src\QuanLyDVIn.TinhGiaInGiaCong.WFUI\obj\x86\Debug\QuanLyDVIn.TinhGiaInGiaCong.WFUI.csprojAssemblyReference.cache
+D:\GitHub02\Tinh-gia-in-gia-cong\QuanLyDVIn02\src\QuanLyDVIn.TinhGiaInGiaCong.WFUI\obj\x86\Debug\ERP.Client.BaseGridControl.resources
+D:\GitHub02\Tinh-gia-in-gia-cong\QuanLyDVIn02\src\QuanLyDVIn.TinhGiaInGiaCong.WFUI\obj\x86\Debug\QuanLyDVIn.TinhGiaInGiaCong.WFUI.CustomControls.TopControl.resources
+D:\GitHub02\Tinh-gia-in-gia-cong\QuanLyDVIn02\src\QuanLyDVIn.TinhGiaInGiaCong.WFUI\obj\x86\Debug\ERP.Client.MainForm.resources
+D:\GitHub02\Tinh-gia-in-gia-cong\QuanLyDVIn02\src\QuanLyDVIn.TinhGiaInGiaCong.WFUI\obj\x86\Debug\QuanLyDVIn.TinhGiaInGiaCong.WFUI.Properties.Resources.resources
+D:\GitHub02\Tinh-gia-in-gia-cong\QuanLyDVIn02\src\QuanLyDVIn.TinhGiaInGiaCong.WFUI\obj\x86\Debug\QuanLyDVIn.TinhGiaInGiaCong.WFUI.csproj.GenerateResource.cache
+D:\GitHub02\Tinh-gia-in-gia-cong\QuanLyDVIn02\src\QuanLyDVIn.TinhGiaInGiaCong.WFUI\obj\x86\Debug\QuanLyDVIn.TinhGiaInGiaCong.WFUI.exe.licenses
+D:\GitHub02\Tinh-gia-in-gia-cong\QuanLyDVIn02\src\QuanLyDVIn.TinhGiaInGiaCong.WFUI\obj\x86\Debug\QuanLyDVIn.TinhGiaInGiaCong.WFUI.csproj.CoreCompileInputs.cache

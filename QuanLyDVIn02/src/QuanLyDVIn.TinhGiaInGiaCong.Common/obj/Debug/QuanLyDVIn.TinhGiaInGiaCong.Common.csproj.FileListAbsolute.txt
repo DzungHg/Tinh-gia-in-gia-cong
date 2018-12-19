@@ -1,0 +1,6 @@
+D:\GitHub02\Tinh-gia-in-gia-cong\QuanLyDVIn02\src\QuanLyDVIn.TinhGiaInGiaCong.Common\bin\Debug\QuanLyDVIn.TinhGiaInGiaCong.Common.dll
+D:\GitHub02\Tinh-gia-in-gia-cong\QuanLyDVIn02\src\QuanLyDVIn.TinhGiaInGiaCong.Common\bin\Debug\QuanLyDVIn.TinhGiaInGiaCong.Common.pdb
+D:\GitHub02\Tinh-gia-in-gia-cong\QuanLyDVIn02\src\QuanLyDVIn.TinhGiaInGiaCong.Common\obj\Debug\QuanLyDVIn.TinhGiaInGiaCong.Common.csprojAssemblyReference.cache
+D:\GitHub02\Tinh-gia-in-gia-cong\QuanLyDVIn02\src\QuanLyDVIn.TinhGiaInGiaCong.Common\obj\Debug\QuanLyDVIn.TinhGiaInGiaCong.Common.csproj.CoreCompileInputs.cache
+D:\GitHub02\Tinh-gia-in-gia-cong\QuanLyDVIn02\src\QuanLyDVIn.TinhGiaInGiaCong.Common\obj\Debug\QuanLyDVIn.TinhGiaInGiaCong.Common.dll
+D:\GitHub02\Tinh-gia-in-gia-cong\QuanLyDVIn02\src\QuanLyDVIn.TinhGiaInGiaCong.Common\obj\Debug\QuanLyDVIn.TinhGiaInGiaCong.Common.pdb

@@ -44,11 +44,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="LoaiThanhPhamDAO.cs" />
+    <Compile Include="ILoaiThanhPHamDAO.cs" />
+    <Compile Include="NiemYetGiaInGiaCongThanhPhamDAO.cs" />
+    <Compile Include="BangGiaInGiaCongDAO.cs" />
+    <Compile Include="IBangGiaInGiaCongDAO.cs" />
+    <Compile Include="INiemYetGiaInGiaCongThanhPham.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\QuanLyDVIn.TinhGiaInGiaCong.BDO\QuanLyDVIn.TinhGiaInGiaCong.BDO.csproj">
+      <Project>{13ac1294-5b89-47fb-a870-50300bdb552f}</Project>
+      <Name>QuanLyDVIn.TinhGiaInGiaCong.BDO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\QuanLyDVIn.TinhGiaInGiaCong.Common\QuanLyDVIn.TinhGiaInGiaCong.Common.csproj">
+      <Project>{d7db4f31-9f28-4b42-ab23-be7147949f25}</Project>
+      <Name>QuanLyDVIn.TinhGiaInGiaCong.Common</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

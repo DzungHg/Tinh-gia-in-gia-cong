@@ -1,0 +1,6 @@
+D:\GitHub02\Tinh-gia-in-gia-cong\QuanLyDVIn02\src\QuanLyDVIn.TinhGiaInGiaCong.BDO\bin\Debug\QuanLyDVIn.TinhGiaInGiaCong.BDO.dll
+D:\GitHub02\Tinh-gia-in-gia-cong\QuanLyDVIn02\src\QuanLyDVIn.TinhGiaInGiaCong.BDO\bin\Debug\QuanLyDVIn.TinhGiaInGiaCong.BDO.pdb
+D:\GitHub02\Tinh-gia-in-gia-cong\QuanLyDVIn02\src\QuanLyDVIn.TinhGiaInGiaCong.BDO\obj\Debug\QuanLyDVIn.TinhGiaInGiaCong.BDO.csprojAssemblyReference.cache
+D:\GitHub02\Tinh-gia-in-gia-cong\QuanLyDVIn02\src\QuanLyDVIn.TinhGiaInGiaCong.BDO\obj\Debug\QuanLyDVIn.TinhGiaInGiaCong.BDO.csproj.CoreCompileInputs.cache
+D:\GitHub02\Tinh-gia-in-gia-cong\QuanLyDVIn02\src\QuanLyDVIn.TinhGiaInGiaCong.BDO\obj\Debug\QuanLyDVIn.TinhGiaInGiaCong.BDO.dll
+D:\GitHub02\Tinh-gia-in-gia-cong\QuanLyDVIn02\src\QuanLyDVIn.TinhGiaInGiaCong.BDO\obj\Debug\QuanLyDVIn.TinhGiaInGiaCong.BDO.pdb

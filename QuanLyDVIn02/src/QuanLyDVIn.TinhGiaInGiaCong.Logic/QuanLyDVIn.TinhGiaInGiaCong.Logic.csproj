@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>bbf731b7-8adf-4c29-b72e-aeb6a3e411ec</ProjectGuid>
+    <ProjectGuid>{BBF731B7-8ADF-4C29-B72E-AEB6A3E411EC}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>QuanLyDVIn.TinhGiaInGiaCong.Logic</RootNamespace>
@@ -31,24 +31,30 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System"/>
-    
-    <Reference Include="System.Core"/>
-    <Reference Include="System.Xml.Linq"/>
-    <Reference Include="System.Data.DataSetExtensions"/>
-    
-    
-    <Reference Include="Microsoft.CSharp"/>
-    
-    <Reference Include="System.Data"/>
-    
-    <Reference Include="System.Net.Http"/>
-    
-    <Reference Include="System.Xml"/>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="LoaiThanhPhamLogic.cs" />
+    <Compile Include="NiemYetGiaInGiaCongThanhPhamLogic.cs" />
+    <Compile Include="BangGiaInGiaCongLogic.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\QuanLyDVIn.TinhGiaInGiaCong.BDO\QuanLyDVIn.TinhGiaInGiaCong.BDO.csproj">
+      <Project>{13ac1294-5b89-47fb-a870-50300bdb552f}</Project>
+      <Name>QuanLyDVIn.TinhGiaInGiaCong.BDO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\QuanLyDVIn.TinhGiaInGiaCong.DAL\QuanLyDVIn.TinhGiaInGiaCong.DAL.csproj">
+      <Project>{8a6ed326-8452-4431-a067-f498ac13fc8d}</Project>
+      <Name>QuanLyDVIn.TinhGiaInGiaCong.DAL</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
- </Project>
+</Project>

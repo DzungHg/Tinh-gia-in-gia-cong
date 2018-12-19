@@ -1,0 +1,13 @@
+D:\GitHub02\Tinh-gia-in-gia-cong\QuanLyDVIn02\src\QuanLyDVIn.TinhGiaInGiaCong.DAL\bin\Debug\QuanLyDVIn.TinhGiaInGiaCong.DAL.dll
+D:\GitHub02\Tinh-gia-in-gia-cong\QuanLyDVIn02\src\QuanLyDVIn.TinhGiaInGiaCong.DAL\bin\Debug\QuanLyDVIn.TinhGiaInGiaCong.DAL.pdb
+D:\GitHub02\Tinh-gia-in-gia-cong\QuanLyDVIn02\src\QuanLyDVIn.TinhGiaInGiaCong.DAL\bin\Debug\Dapper.dll
+D:\GitHub02\Tinh-gia-in-gia-cong\QuanLyDVIn02\src\QuanLyDVIn.TinhGiaInGiaCong.DAL\bin\Debug\QuanLyDVIn.TinhGiaInGiaCong.BDO.dll
+D:\GitHub02\Tinh-gia-in-gia-cong\QuanLyDVIn02\src\QuanLyDVIn.TinhGiaInGiaCong.DAL\bin\Debug\QuanLyDVIn.TinhGiaInGiaCong.Common.dll
+D:\GitHub02\Tinh-gia-in-gia-cong\QuanLyDVIn02\src\QuanLyDVIn.TinhGiaInGiaCong.DAL\bin\Debug\QuanLyDVIn.TinhGiaInGiaCong.BDO.pdb
+D:\GitHub02\Tinh-gia-in-gia-cong\QuanLyDVIn02\src\QuanLyDVIn.TinhGiaInGiaCong.DAL\bin\Debug\QuanLyDVIn.TinhGiaInGiaCong.Common.pdb
+D:\GitHub02\Tinh-gia-in-gia-cong\QuanLyDVIn02\src\QuanLyDVIn.TinhGiaInGiaCong.DAL\bin\Debug\Dapper.xml
+D:\GitHub02\Tinh-gia-in-gia-cong\QuanLyDVIn02\src\QuanLyDVIn.TinhGiaInGiaCong.DAL\obj\Debug\QuanLyDVIn.TinhGiaInGiaCong.DAL.csprojAssemblyReference.cache
+D:\GitHub02\Tinh-gia-in-gia-cong\QuanLyDVIn02\src\QuanLyDVIn.TinhGiaInGiaCong.DAL\obj\Debug\QuanLyDVIn.TinhGiaInGiaCong.DAL.csproj.CoreCompileInputs.cache
+D:\GitHub02\Tinh-gia-in-gia-cong\QuanLyDVIn02\src\QuanLyDVIn.TinhGiaInGiaCong.DAL\obj\Debug\QuanLyDVIn.TinhGiaInGiaCong.DAL.csproj.CopyComplete
+D:\GitHub02\Tinh-gia-in-gia-cong\QuanLyDVIn02\src\QuanLyDVIn.TinhGiaInGiaCong.DAL\obj\Debug\QuanLyDVIn.TinhGiaInGiaCong.DAL.dll
+D:\GitHub02\Tinh-gia-in-gia-cong\QuanLyDVIn02\src\QuanLyDVIn.TinhGiaInGiaCong.DAL\obj\Debug\QuanLyDVIn.TinhGiaInGiaCong.DAL.pdb

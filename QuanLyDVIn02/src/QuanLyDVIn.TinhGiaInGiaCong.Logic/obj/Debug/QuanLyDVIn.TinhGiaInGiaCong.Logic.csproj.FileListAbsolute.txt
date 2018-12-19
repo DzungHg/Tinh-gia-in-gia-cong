@@ -1,0 +1,15 @@
+D:\GitHub02\Tinh-gia-in-gia-cong\QuanLyDVIn02\src\QuanLyDVIn.TinhGiaInGiaCong.Logic\bin\Debug\QuanLyDVIn.TinhGiaInGiaCong.Logic.dll
+D:\GitHub02\Tinh-gia-in-gia-cong\QuanLyDVIn02\src\QuanLyDVIn.TinhGiaInGiaCong.Logic\bin\Debug\QuanLyDVIn.TinhGiaInGiaCong.Logic.pdb
+D:\GitHub02\Tinh-gia-in-gia-cong\QuanLyDVIn02\src\QuanLyDVIn.TinhGiaInGiaCong.Logic\bin\Debug\QuanLyDVIn.TinhGiaInGiaCong.BDO.dll
+D:\GitHub02\Tinh-gia-in-gia-cong\QuanLyDVIn02\src\QuanLyDVIn.TinhGiaInGiaCong.Logic\bin\Debug\QuanLyDVIn.TinhGiaInGiaCong.DAL.dll
+D:\GitHub02\Tinh-gia-in-gia-cong\QuanLyDVIn02\src\QuanLyDVIn.TinhGiaInGiaCong.Logic\bin\Debug\Dapper.dll
+D:\GitHub02\Tinh-gia-in-gia-cong\QuanLyDVIn02\src\QuanLyDVIn.TinhGiaInGiaCong.Logic\bin\Debug\QuanLyDVIn.TinhGiaInGiaCong.Common.dll
+D:\GitHub02\Tinh-gia-in-gia-cong\QuanLyDVIn02\src\QuanLyDVIn.TinhGiaInGiaCong.Logic\bin\Debug\QuanLyDVIn.TinhGiaInGiaCong.BDO.pdb
+D:\GitHub02\Tinh-gia-in-gia-cong\QuanLyDVIn02\src\QuanLyDVIn.TinhGiaInGiaCong.Logic\bin\Debug\QuanLyDVIn.TinhGiaInGiaCong.DAL.pdb
+D:\GitHub02\Tinh-gia-in-gia-cong\QuanLyDVIn02\src\QuanLyDVIn.TinhGiaInGiaCong.Logic\bin\Debug\Dapper.xml
+D:\GitHub02\Tinh-gia-in-gia-cong\QuanLyDVIn02\src\QuanLyDVIn.TinhGiaInGiaCong.Logic\bin\Debug\QuanLyDVIn.TinhGiaInGiaCong.Common.pdb
+D:\GitHub02\Tinh-gia-in-gia-cong\QuanLyDVIn02\src\QuanLyDVIn.TinhGiaInGiaCong.Logic\obj\Debug\QuanLyDVIn.TinhGiaInGiaCong.Logic.csprojAssemblyReference.cache
+D:\GitHub02\Tinh-gia-in-gia-cong\QuanLyDVIn02\src\QuanLyDVIn.TinhGiaInGiaCong.Logic\obj\Debug\QuanLyDVIn.TinhGiaInGiaCong.Logic.csproj.CoreCompileInputs.cache
+D:\GitHub02\Tinh-gia-in-gia-cong\QuanLyDVIn02\src\QuanLyDVIn.TinhGiaInGiaCong.Logic\obj\Debug\QuanLyDVIn.TinhGiaInGiaCong.Logic.csproj.CopyComplete
+D:\GitHub02\Tinh-gia-in-gia-cong\QuanLyDVIn02\src\QuanLyDVIn.TinhGiaInGiaCong.Logic\obj\Debug\QuanLyDVIn.TinhGiaInGiaCong.Logic.dll
+D:\GitHub02\Tinh-gia-in-gia-cong\QuanLyDVIn02\src\QuanLyDVIn.TinhGiaInGiaCong.Logic\obj\Debug\QuanLyDVIn.TinhGiaInGiaCong.Logic.pdb

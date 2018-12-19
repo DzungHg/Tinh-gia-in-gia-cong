@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace QuanLyDVIn.TinhGiaInGiaCong.BDO
 {
-    public class Class1
+    public class LoaiThanhPhamBDO
     {
+        public string Ma { get; set; }
+        public string Ten { get; set; }
+        public string DienGiai { get; set; }
+
     }
 }

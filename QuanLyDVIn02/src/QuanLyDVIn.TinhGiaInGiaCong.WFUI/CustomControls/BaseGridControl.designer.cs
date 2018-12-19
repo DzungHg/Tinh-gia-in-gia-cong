@@ -1,13 +1,13 @@
-﻿namespace QuanLyDVIn.TinhGiaInGiaCong.WFUI
+﻿namespace ERP.Client
 {
-    partial class RadForm1
+    partial class BaseGridControl
     {
-        /// <summary>
+        /// <summary> 
         /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
+        /// <summary> 
         /// Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
@@ -20,28 +20,31 @@
             base.Dispose(disposing);
         }
 
-        #region Windows Form Designer generated code
+        #region Component Designer generated code
 
-        /// <summary>
-        /// Required method for Designer support - do not modify
+        /// <summary> 
+        /// Required method for Designer support - do not modify 
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
-            ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             this.SuspendLayout();
             // 
-            // RadForm1
+            // BaseGridControl
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Name = "RadForm1";
-            this.Text = "RadForm1";
-            ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
+            this.Name = "BaseGridControl";
+            this.Size = new System.Drawing.Size(458, 347);
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private Telerik.WinControls.UI.RadVirtualGrid radGridView1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private Telerik.WinControls.UI.RadButton editButton;
+        private Telerik.WinControls.UI.RadButton deleteButton;
+        private Telerik.WinControls.UI.RadButton printButton;
+        private Telerik.WinControls.UI.RadButton exportButton;
     }
 }
