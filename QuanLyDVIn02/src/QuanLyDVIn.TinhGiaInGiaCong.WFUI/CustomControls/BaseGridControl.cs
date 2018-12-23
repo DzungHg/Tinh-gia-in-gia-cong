@@ -11,17 +11,16 @@ using Telerik.WinControls.UI;
 using Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml.Xlsx;
 using System.IO;
 using Telerik.Windows.Documents.Spreadsheet.Model;
-using Telerik.WinForms.Controls.Spreadsheet;
+using Telerik.WinForms.Spreadsheet;
 using Telerik.Windows.Documents.Spreadsheet.FormatProviders;
-using ERP.Repository;
 using Telerik.WinControls;
 
-namespace ERP.Client
+namespace QuanLyDVIn.TinhGiaInGiaCong.WFUI
 {
     public partial class BaseGridControl : UserControl
     {
         protected List<string> columnNames;
-        protected ISavableObject currentItem;
+        
         protected Type[] columnTypes;
         protected string dataFormText; 
         public RadVirtualGrid gridControl
@@ -120,7 +119,7 @@ namespace ERP.Client
                 return;
             }
 
-            var dialog = new ERPDataForm();
+           /* var dialog = new ERPDataForm();
             dialog.Text = dataFormText;
             dialog.DataEntry.DataSource = currentItem;
          
@@ -130,6 +129,7 @@ namespace ERP.Client
                 this.RefreshData(this.gridControl.PageSize * this.gridControl.PageIndex);
                 
             }
+            */
         }
 
         protected virtual void DeleteButton_Click(object sender, EventArgs e)
@@ -142,7 +142,7 @@ namespace ERP.Client
 
             if (RadMessageBox.Show("Delete Selected Item?", "Confirm Delete", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
-                (currentItem as ISavableObject).Delete();
+               // (currentItem as ISavableObject).Delete();
                 this.RefreshData(this.gridControl.PageSize * this.gridControl.PageIndex);
             }
         }
@@ -160,7 +160,7 @@ namespace ERP.Client
             spreadsheet.Parent = window;
             window.Show();
             spreadsheet.Workbook = CreateWorkbook();         
-            spreadsheet.Print(new PrintWhatSettings(ExportWhat.ActiveSheet, false));
+            //spreadsheet.Print(new PrintWhatSettings(ExportWhat.ActiveSheet, false));
             window.Close();
         }
 

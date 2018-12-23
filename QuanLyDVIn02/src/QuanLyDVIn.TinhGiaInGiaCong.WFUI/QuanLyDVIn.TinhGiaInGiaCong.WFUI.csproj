@@ -36,6 +36,8 @@
     <Reference Include="AutoMapper, Version=8.0.0.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
       <HintPath>..\..\lib\AutoMapper.8.0.0\lib\net461\AutoMapper.dll</HintPath>
     </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
@@ -53,27 +55,47 @@
       <HintPath>..\lib\RCWF\2018.3.1016.40\Telerik.WinControls.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Telerik.WinControls.GridView, Version=2018.3.1016.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.RadSpreadsheet, Version=2018.3.1016.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
     <Reference Include="Telerik.WinControls.UI, Version=2018.3.1016.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
       <HintPath>..\lib\RCWF\2018.3.1016.40\Telerik.WinControls.UI.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Telerik.Windows.Documents.Core, Version=2018.3.1010.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7" />
+    <Reference Include="Telerik.Windows.Documents.Spreadsheet, Version=2018.3.1010.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml, Version=2018.3.1010.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.Windows.Documents.Spreadsheet.FormatProviders.Pdf, Version=2018.3.1010.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7" />
     <Reference Include="TelerikCommon, Version=2018.3.1016.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
       <HintPath>..\lib\RCWF\2018.3.1016.40\TelerikCommon.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class1.cs" />
     <Compile Include="CustomControls\BaseGridControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="CustomControls\BaseGridControl.designer.cs">
       <DependentUpon>BaseGridControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="CustomControls\TitleBarControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomControls\TitleBarControl.designer.cs">
+      <DependentUpon>TitleBarControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="CustomControls\TopControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="CustomControls\TopControl.designer.cs">
       <DependentUpon>TopControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControls\Views\BangGiaInGiaCongControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomControls\Views\BangGiaInGiaCongControl.Designer.cs">
+      <DependentUpon>BangGiaInGiaCongControl.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\BangGiaInGiaCong.cs" />
     <Compile Include="Models\LoaiThanhPhamContext.cs" />
@@ -87,8 +109,13 @@
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Presenters\BangGiasInGiaCongPresenter.cs" />
+    <Compile Include="Views\IViewBangGiasInGiaCong.cs" />
     <EmbeddedResource Include="CustomControls\BaseGridControl.resx">
       <DependentUpon>BaseGridControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomControls\TitleBarControl.resx">
+      <DependentUpon>TitleBarControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CustomControls\TopControl.resx">
       <DependentUpon>TopControl.cs</DependentUpon>
@@ -124,8 +151,6 @@
   </ItemGroup>
   <ItemGroup>
     <!--sirinie -->
-    <Folder Include="Presenters\" />
-    <Folder Include="Views\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\QuanLyDVIn.TinhGiaInGiaCong.BDO\QuanLyDVIn.TinhGiaInGiaCong.BDO.csproj">

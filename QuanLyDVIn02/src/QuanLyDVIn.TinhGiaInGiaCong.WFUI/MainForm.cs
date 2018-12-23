@@ -1,6 +1,4 @@
-﻿using ERP.Client.Analytics;
-using ERP.Client.Properties;
-using ERP.Repository;
+﻿
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,52 +11,55 @@ using Telerik.WinControls;
 using Telerik.WinControls.Analytics;
 using Telerik.WinControls.UI;
 
-namespace ERP.Client
+
+namespace QuanLyDVIn.TinhGiaInGiaCong.WFUI
 {
     public partial class MainForm : ShapedForm
     {
-        InfoControl infoControl;
-        BaseGridControl storesControl;
-        BaseGridControl vendorsControl;
-        BaseGridControl purchasesControl;
-        BaseGridControl inventoriesControl;
-        BaseGridControl billOfMaterialsControl;
-        BaseGridControl workOrdersControl;
-        BaseGridControl individualsControl;
-        BaseGridControl ordersControl;
+        /* InfoControl infoControl;
+         BaseGridControl storesControl;
+         BaseGridControl vendorsControl;
+         BaseGridControl purchasesControl;
+         BaseGridControl inventoriesControl;
+         BaseGridControl billOfMaterialsControl;
+         BaseGridControl workOrdersControl;
+         BaseGridControl individualsControl;
+         BaseGridControl ordersControl;*/
 
+        BaseGridControl bangGiasControl;
         public MainForm()
         {
-            ControlTraceMonitor.AnalyticsMonitor = new GoogleAnalyticsMonitor();
+            //ControlTraceMonitor.AnalyticsMonitor = new GoogleAnalyticsMonitor();
             
             InitializeComponent();
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.radCollapsiblePanel1.CollapsiblePanelElement.HeaderElement.ShowHeaderLine = false;
+            this.radCollapsiblePanel2.CollapsiblePanelElement.HeaderElement.ShowHeaderLine = false;
             topControl1.ViewLabel.TextChanged += ViewLabel_TextChanged;
-            ThemeResolutionService.ApplicationThemeChanged += ThemeResolutionService_ApplicationThemeChanged;
-            radTreeView1.SelectedNodeChanged += RadTreeView1_SelectedNodeChanged;
-            radBreadCrumb1.DefaultTreeView = radTreeView1;
+            //ThemeResolutionService.ApplicationThemeChanged += ThemeResolutionService_ApplicationThemeChanged;
+            radTreeView2.SelectedNodeChanged += RadTreeView1_SelectedNodeChanged;
+            radBreadCrumb2.DefaultTreeView = radTreeView2;
 
-            this.Icon = Resources.ERP;
-            this.Text = "ERP Demo";
+            //this.Icon = Resources.ERP;
+            this.Text = "Tính giá in gia công";
 
-            foreach (RadTreeNode item in radTreeView1.TreeViewElement.GetNodes())
+            foreach (RadTreeNode item in radTreeView2.TreeViewElement.GetNodes())
             {
                 if (item.Nodes.Count > 0)
                 {
-                    item.Image = Resources.folder;
+                    //item.Image = Resources.folder;
                 }
             }
             topControl1.ViewLabel.Font = new Font("Segoe UI", 16, FontStyle.Regular);
             topControl1.ViewLabel.Text = "";
-            radCollapsiblePanel1.EnableAnimation = false;
-            radCollapsiblePanel1.Collapsed += RadCollapsiblePanel1_Collapsed;
-            radCollapsiblePanel1.Expanded += RadCollapsiblePanel1_Expanded;
+            radCollapsiblePanel2.EnableAnimation = false;
+            radCollapsiblePanel2.Collapsed += RadCollapsiblePanel1_Collapsed;
+            radCollapsiblePanel2.Expanded += RadCollapsiblePanel1_Expanded;
+            
         }
 
         private void ViewLabel_TextChanged(object sender, EventArgs e)
         {
-            radCollapsiblePanel1.HeaderText = topControl1.ViewLabel.Text;
+            radCollapsiblePanel2.HeaderText = "";//topControl1.ViewLabel.Text;
         }
 
         private void RadCollapsiblePanel1_Expanded(object sender, EventArgs e)
@@ -80,7 +81,7 @@ namespace ERP.Client
         {
             base.OnShown(e);
             OnThemeChanged();
-            radTreeView1.Nodes[2].Nodes[1].Selected = true;
+            radTreeView2.Nodes[0].Nodes[0].Selected = true;
             if (ControlTraceMonitor.AnalyticsMonitor != null)
             {
                 ControlTraceMonitor.AnalyticsMonitor.TrackAtomicFeature("ApplicationStarted." + DateTime.Now.ToShortDateString());
@@ -88,55 +89,61 @@ namespace ERP.Client
         }
 
         private void RadTreeView1_SelectedNodeChanged(object sender, Telerik.WinControls.UI.RadTreeViewEventArgs e)
-        {/*
+        {
             if (ControlTraceMonitor.AnalyticsMonitor != null)
             {
                 ControlTraceMonitor.AnalyticsMonitor.TrackAtomicFeature("ViewChanged." + e.Node.Name);
             }
             switch (e.Node.Name)
             {
-                case "instructionsNode":
-                    topControl1.ViewLabel.Text = "Instructions";
-                    AttachInfoControl("Instructions.pdf");
+                case "bangGiaInNode":
+                    topControl1.ViewLabel.Text = "Bảng giá In";
+                    AttachGridControl<BangGiaInGiaCongControl>(ref bangGiasControl);
                     break;
-                case "documentationNode":
-                    topControl1.ViewLabel.Text = "Documentation";
-                    AttachInfoControl("Documentation.pdf");
-                    break;
-                case "storesNode":
-                    topControl1.ViewLabel.Text = "Stores";
-                    AttachGridControl<StoresControl>(ref storesControl);
-                    break;
-                case "suppliersNode":
-                    topControl1.ViewLabel.Text = "Vendors";
-                    AttachGridControl<VendorsControl>(ref vendorsControl);
-                    break;
-                case "purchasesNode":
-                    topControl1.ViewLabel.Text = "Purchase Orders";
-                    AttachGridControl<PurchasesControl>(ref purchasesControl);
-                    break;
-                case "productInventoryNode":
-                    topControl1.ViewLabel.Text = "Product Inventory";
-                    AttachGridControl<InventoriesControl>(ref inventoriesControl);
-                    break;
-                case "billOfMaterialsNode":
-                    topControl1.ViewLabel.Text = "Bill Of Materials";
-                    AttachGridControl<BillOfMaterialsControl>(ref billOfMaterialsControl);
-                    break;
-                case "workOrdersNode":
-                    topControl1.ViewLabel.Text = "Work Orders";
-                    AttachGridControl<WorkOrdersControl>(ref workOrdersControl);
-                    break;
-                case "individualsNode":
-                    topControl1.ViewLabel.Text = "Individuals";
-                    AttachGridControl<IndividualsControl>(ref individualsControl);
-                    break;
-                case "ordersNode":
-                    topControl1.ViewLabel.Text = "Sales Orders";
-                    AttachGridControl<OrdersControl>(ref ordersControl);
-                    break;
+                    /*
+                    case "instructionsNode":
+                        topControl1.ViewLabel.Text = "Instructions";
+                        AttachInfoControl("Instructions.pdf");
+                        break;
+                    case "documentationNode":
+                        topControl1.ViewLabel.Text = "Documentation";
+                        AttachInfoControl("Documentation.pdf");
+                        break;
+                    case "storesNode":
+                        topControl1.ViewLabel.Text = "Stores";
+                        AttachGridControl<StoresControl>(ref storesControl);
+                        break;
+                    case "suppliersNode":
+                        topControl1.ViewLabel.Text = "Vendors";
+                        AttachGridControl<VendorsControl>(ref vendorsControl);
+                        break;
+                    case "purchasesNode":
+                        topControl1.ViewLabel.Text = "Purchase Orders";
+                        AttachGridControl<PurchasesControl>(ref purchasesControl);
+                        break;
+                    case "productInventoryNode":
+                        topControl1.ViewLabel.Text = "Product Inventory";
+                        AttachGridControl<InventoriesControl>(ref inventoriesControl);
+                        break;
+                    case "billOfMaterialsNode":
+                        topControl1.ViewLabel.Text = "Bill Of Materials";
+                        AttachGridControl<BillOfMaterialsControl>(ref billOfMaterialsControl);
+                        break;
+                    case "workOrdersNode":
+                        topControl1.ViewLabel.Text = "Work Orders";
+                        AttachGridControl<WorkOrdersControl>(ref workOrdersControl);
+                        break;
+                    case "individualsNode":
+                        topControl1.ViewLabel.Text = "Individuals";
+                        AttachGridControl<IndividualsControl>(ref individualsControl);
+                        break;
+                    case "ordersNode":
+                        topControl1.ViewLabel.Text = "Sales Orders";
+                        AttachGridControl<OrdersControl>(ref ordersControl);
+                        break;
+                        */
             }
-            */
+            
         }
 
         public void AttachGridControl<T>(ref BaseGridControl ctrl) where T : BaseGridControl, new()
@@ -152,7 +159,7 @@ namespace ERP.Client
             tableLayoutPanel1.Controls.Add(ctrl, 1, 2);
 
         }
-        public void AttachInfoControl(string document)
+        /*public void AttachInfoControl(string document)
         {
             if (infoControl == null)
             {
@@ -166,7 +173,7 @@ namespace ERP.Client
            
             tableLayoutPanel1.Controls.Remove(tableLayoutPanel1.GetControlFromPosition(1, 2));
             tableLayoutPanel1.Controls.Add(infoControl, 1, 2);
-        }
+        }*/
 
         protected void OnThemeChanged()
         {

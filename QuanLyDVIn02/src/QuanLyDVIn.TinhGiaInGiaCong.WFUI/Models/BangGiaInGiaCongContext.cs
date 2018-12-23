@@ -11,7 +11,7 @@ namespace QuanLyDVIn.TinhGiaInGiaCong.WFUI.Models
 {
     public class BangGiaInGiaCongContext
     {
-        BangGiaInGiaCongLogic logic = new BangGiaInGiaCongLogic();;
+        BangGiaInGiaCongLogic logic = new BangGiaInGiaCongLogic();
 
         public  List<BangGiaInGiaCong> DocTatCa()
         {

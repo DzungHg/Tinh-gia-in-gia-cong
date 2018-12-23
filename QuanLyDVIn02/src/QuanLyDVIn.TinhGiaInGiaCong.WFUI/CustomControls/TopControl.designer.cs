@@ -1,6 +1,6 @@
 ﻿using Telerik.WinControls.UI;
 
-namespace QuanLyDVIn.TinhGiaInGiaCong.WFUI.CustomControls
+namespace QuanLyDVIn.TinhGiaInGiaCong.WFUI
 {
     partial class TopControl
     {

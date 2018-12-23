@@ -2,7 +2,7 @@
 using System.Windows.Forms;
 using Telerik.WinControls.UI;
 
-namespace QuanLyDVIn.TinhGiaInGiaCong.WFUI.CustomControls
+namespace QuanLyDVIn.TinhGiaInGiaCong.WFUI
 {
     public partial class TopControl : UserControl
     {
@@ -13,7 +13,6 @@ namespace QuanLyDVIn.TinhGiaInGiaCong.WFUI.CustomControls
         public TopControl()
         {
             InitializeComponent();
-
             
 
             InitializeThemesDropDown();
