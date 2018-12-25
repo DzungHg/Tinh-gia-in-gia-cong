@@ -73,6 +73,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="CustomControls\BaseListViewControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomControls\BaseListViewControl.designer.cs">
+      <DependentUpon>BaseListViewControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="CustomControls\BaseGridControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -98,6 +104,7 @@
       <DependentUpon>BangGiaInGiaCongControl.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\BangGiaInGiaCong.cs" />
+    <Compile Include="Models\ISavableObject.cs" />
     <Compile Include="Models\LoaiThanhPhamContext.cs" />
     <Compile Include="Models\NiemYetGIGCThanhPhamContext.cs" />
     <Compile Include="Models\BangGiaInGiaCongContext.cs" />
@@ -110,7 +117,18 @@
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Presenters\BangGiasInGiaCongPresenter.cs" />
+    <Compile Include="Presenters\TaoBangGiaInGCPresenter.cs" />
+    <Compile Include="TaoBangGiaInGCForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TaoBangGiaInGCForm.Designer.cs">
+      <DependentUpon>TaoBangGiaInGCForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\IViewBangGiasInGiaCong.cs" />
+    <Compile Include="Views\IViewTaoBangGiaInGC.cs" />
+    <EmbeddedResource Include="CustomControls\BaseListViewControl.resx">
+      <DependentUpon>BaseListViewControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CustomControls\BaseGridControl.resx">
       <DependentUpon>BaseGridControl.cs</DependentUpon>
     </EmbeddedResource>
@@ -135,6 +153,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="TaoBangGiaInGCForm.resx">
+      <DependentUpon>TaoBangGiaInGCForm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

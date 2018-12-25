@@ -20,7 +20,7 @@ namespace QuanLyDVIn.TinhGiaInGiaCong.WFUI
     public partial class BaseGridControl : UserControl
     {
         protected List<string> columnNames;
-        
+        protected ISavableObject currentItem;
         protected Type[] columnTypes;
         protected string dataFormText; 
         public RadVirtualGrid gridControl

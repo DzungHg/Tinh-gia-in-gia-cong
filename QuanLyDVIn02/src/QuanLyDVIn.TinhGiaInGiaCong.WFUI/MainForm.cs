@@ -26,7 +26,7 @@ namespace QuanLyDVIn.TinhGiaInGiaCong.WFUI
          BaseGridControl individualsControl;
          BaseGridControl ordersControl;*/
 
-        BaseGridControl bangGiasControl;
+        BaseListViewControl bangGiasControl;
         public MainForm()
         {
             //ControlTraceMonitor.AnalyticsMonitor = new GoogleAnalyticsMonitor();
@@ -146,7 +146,7 @@ namespace QuanLyDVIn.TinhGiaInGiaCong.WFUI
             
         }
 
-        public void AttachGridControl<T>(ref BaseGridControl ctrl) where T : BaseGridControl, new()
+        public void AttachGridControl<T>(ref BaseListViewControl ctrl) where T : BaseListViewControl, new()
         {
             if (ctrl == null)
             {

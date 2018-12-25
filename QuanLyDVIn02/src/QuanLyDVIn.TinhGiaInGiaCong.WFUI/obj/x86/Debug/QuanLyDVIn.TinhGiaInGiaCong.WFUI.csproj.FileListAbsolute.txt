@@ -58,3 +58,4 @@ F:\GitHub02\Tinh-gia-in-gia-cong\QuanLyDVIn02\src\QuanLyDVIn.TinhGiaInGiaCong.WF
 F:\GitHub02\Tinh-gia-in-gia-cong\QuanLyDVIn02\src\QuanLyDVIn.TinhGiaInGiaCong.WFUI\obj\x86\Debug\QuanLyDVIn.TinhGiaInGiaCong.WFUI.BaseGridControl.resources
 F:\GitHub02\Tinh-gia-in-gia-cong\QuanLyDVIn02\src\QuanLyDVIn.TinhGiaInGiaCong.WFUI\obj\x86\Debug\QuanLyDVIn.TinhGiaInGiaCong.WFUI.TitleBarControl.resources
 F:\GitHub02\Tinh-gia-in-gia-cong\QuanLyDVIn02\src\QuanLyDVIn.TinhGiaInGiaCong.WFUI\obj\x86\Debug\QuanLyDVIn.TinhGiaInGiaCong.WFUI.TopControl.resources
+F:\GitHub02\Tinh-gia-in-gia-cong\QuanLyDVIn02\src\QuanLyDVIn.TinhGiaInGiaCong.WFUI\obj\x86\Debug\QuanLyDVIn.TinhGiaInGiaCong.WFUI.BaseListViewControl.resources
